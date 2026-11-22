@@ -1,4 +1,4 @@
-# Instagram Contact Messenger
+# Instagram Contact Messenger/Mass Messeger
 
 A local Chrome/Edge Manifest V3 extension that lets you select accounts from Instagram's **Following** dialog, enter one message, and send it sequentially to the selected accounts.
 
