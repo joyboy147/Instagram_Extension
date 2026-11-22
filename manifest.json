@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram Contact Messenger",
+  "version": "0.1.0",
+  "description": "Select accounts from your Instagram Following dialog and send one contact message to the selected recipients.",
+  "permissions": ["storage", "tabs", "sidePanel"],
+  "host_permissions": ["https://www.instagram.com/*"],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_title": "Open Instagram Contact Messenger"
+  },
+  "side_panel": {
+    "default_path": "sidepanel/index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["content-script.js"],
+      "css": ["content-styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

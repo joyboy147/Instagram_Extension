@@ -1,0 +1,30 @@
+.icm-select-control {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 auto;
+  height: 32px;
+  justify-content: center;
+  margin-inline-start: 9px;
+  padding: 0 2px;
+  position: relative;
+  z-index: 2147483646;
+}
+
+.icm-select-control input {
+  accent-color: #0095f6;
+  cursor: pointer;
+  height: 19px;
+  margin: 0;
+  width: 19px;
+}
+
+.icm-select-control input:focus-visible {
+  outline: 2px solid #0095f6;
+  outline-offset: 2px;
+}
+
+.icm-selected-row {
+  background: rgba(0, 149, 246, 0.05) !important;
+  border-radius: 8px;
+}
